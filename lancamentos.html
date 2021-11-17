@@ -17,7 +17,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/financeiro.min.css" rel="stylesheet">
+    <link href="css/financeiro.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -135,7 +135,7 @@
             <!-- Main Content -->
             <div id="content">
 
-                <!-- Topbar -->
+                <!-- Barra superior -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
@@ -291,7 +291,7 @@
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
-                        <!-- Nav Item - User Information -->
+                        <!-- Nav Item - Informações do usuário -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -299,7 +299,7 @@
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
                             </a>
-                            <!-- Dropdown - User Information -->
+                            <!-- Dropdown - Informações do usuário -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
@@ -317,20 +317,23 @@
                     </ul>
 
                 </nav>
-                <!-- End of Topbar -->
+                <!-- Fim da barra superior -->
 
-                <!-- Begin Page Content -->
+                <!-- Inicio do conteúdo da página -->
                 <div class="container-fluid">
 
-                    <div>
-                        <h1 class="h3 mb-2 text-gray-800">Lançamentos</h1>
-                        <p class="mb-4">Área para o lançamentos de débitos e créditos.</p> 
+                    <div class="row">
+                        <div class="col-md-11">
+                            <h1 class="h3 mb-2 text-gray-800">Lançamentos</h1>
+                            <p class="mb-4">Área para o lançamentos de débitos e créditos.</p> 
+                        </div>
+                        <div class="col-md-1">                            
+                                <i class="fas fa-4x fa-plus-circle"></i>
+                                Adicionar
+                        </div>                                                
                     </div>
-                    <i class="fas fa-6x fa-plus-circle"></i>
-                  
-                    <!-- Page Heading -->
-                   
-                    <!-- DataTales Example -->
+
+                    <!-- Tabela de lançamentos -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
                             <h6 class="m-0 font-weight-bold text-primary">Gerenciar Conta > Lançamentos</h6>
