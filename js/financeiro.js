@@ -1,6 +1,6 @@
 (function($) {
   "use strict"; 
-  // Toggle the side navigation
+  // Alterna para a barra de navegação lateral
   $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
     $("body").toggleClass("sidebar-toggled");
     $(".sidebar").toggleClass("toggled");
@@ -9,13 +9,13 @@
     };
   });
 
-  // Close any open menu accordions when window is resized below 768px
+  // Fecha qualquer menu quando a janela está abaixo de 768px  
   $(window).resize(function() {
     if ($(window).width() < 768) {
       $('.sidebar .collapse').collapse('hide');
     };
     
-    // Toggle the side navigation when window is resized below 480px
+    // Fecha qualquer menu quando a janela está abaixo de 480px  
     if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
       $("body").addClass("sidebar-toggled");
       $(".sidebar").addClass("toggled");
@@ -33,7 +33,7 @@
     }
   });
 
-  // Scroll to top button appear
+  // Exibe o botão de rolagem para cima
   $(document).on('scroll', function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
@@ -43,7 +43,7 @@
     }
   });
 
-  // Smooth scrolling using jQuery easing
+  //Rolagem para cima usando jQyert  
   $(document).on('click', 'a.scroll-to-top', function(e) {
     var $anchor = $(this);
     $('html, body').stop().animate({
@@ -52,8 +52,9 @@
     e.preventDefault();
   });
 
-})(jQuery); // End of use strict
+})(jQuery);
 
+// Função que só permite números no CPF
 function permiteSoNumeros(evt) {  
   var entrada = (evt.which) ? evt.which : evt.keyCode
   if (entrada > 31 && (entrada < 48 || entrada > 57))
@@ -61,8 +62,8 @@ function permiteSoNumeros(evt) {
   return true;
 }
 
-function formatarCPF(evt){  
 //Função que formata o CPF via REGEX
+function formatarCPF(evt){  
   var elemento = document.getElementById(evt);
   if (elemento.value.length == 11) {
     const cpf = document.querySelector('#' + evt);    
