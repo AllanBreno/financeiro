@@ -53,3 +53,20 @@
   });
 
 })(jQuery); // End of use strict
+
+function permiteSoNumeros(evt) {  
+  var entrada = (evt.which) ? evt.which : evt.keyCode
+  if (entrada > 31 && (entrada < 48 || entrada > 57))
+      return false;
+  return true;
+}
+
+function formatarCPF(evt){  
+//Função que formata o CPF via REGEX
+  var elemento = document.getElementById(evt);
+  if (elemento.value.length == 11) {
+    const cpf = document.querySelector('#' + evt);    
+    let value = cpf.value.replace(/^([\d]{3})([\d]{3})([\d]{3})([\d]{2})$/, "$1.$2.$3-$4");        
+    cpf.value = value;  
+  } 
+}
