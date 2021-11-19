@@ -233,7 +233,7 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
+            <!-- Rodapé -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -241,7 +241,7 @@
                     </div>
                 </div>
             </footer>
-            <!-- End of Footer -->
+            <!-- Fim do rodapé -->
 
         </div>
         <!-- End of Content Wrapper -->
@@ -304,35 +304,75 @@
    </div>
    <!--Fim modal de criação de categorias -->
 
-   <!-- Modal de informações do usuário -->
+    <!-- Modal de informações de usuários -->
+    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog" aria-labelledby="perfilModalLabel"
+    aria-hidden="true">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="usuarioModalLabel">Informações do usuário logado</h5>
+                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">×</span>
+                   </button>
+               </div>
+               <!-- Corpo do modal -->
+               <div class="modal-body">                    
+                   <form class="row g-3 needs-validation" novalidate>
+                       <div class="col-md-6">
+                         <label for="nomeValicacao" class="form-label">Nome</label>
+                         <label class="text-primary" for="nomeValicacao">Bruno Martins Peçanha</label>                          
+                       </div>
+                       <div class="col-md-5">
+                         <label class="form-label">CPF</label>
+                         <label class="text-primary" class="form-label">123.554.654-88</label>
+                       </div>
+                       <div class="col-md-5">
+                         <label class="form-check-label" class="text-primary" for="invalidCheck">Suspenso: <span class="text-primary">Não</span></label>
+                       </div>  
+                   </form>             
+               </div>
+               <div class="modal-footer">
+                   <button class="btn btn-primary" type="submit">Okay</button>                               
+               </div>                
+           </div>
+       </div>
+   </div>
+   <!--Fim modal de informações de administradores -->
+
+   <!-- Modal de informações de usuários -->
    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog" aria-labelledby="perfilModalLabel"
    aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
-                  <h5 class="modal-title" id="perfilModalLabel">Perfil</h5>
+                  <h5 class="modal-title" id="usuarioModalLabel">Informações do usuário logado</h5>
                   <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">×</span>
                   </button>
               </div>
               <!-- Corpo do modal -->
               <div class="modal-body">                    
-                  <form class="row g-3">
-                      <div class="col-md-12">
-                        <label for="validacaoNome" class="form-label">Bruno Martins Peçanha</label>
-                        <label for="validacaoNome" class="form-label">Bruno Martins Peçanha</label>
-                        <label for="validacaoNome" class="form-label">Bruno Martins Peçanha</label>
-                        <label for="validacaoNome" class="form-label">Bruno Martins Peçanha</label>                       
+                  <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-6">
+                        <label for="nomeValicacao" class="form-label">Nome</label>
+                        <label class="text-primary" for="nomeValicacao">Bruno Martins Peçanha</label>                          
                       </div>
-                  </form>                    
+                      <div class="col-md-5">
+                        <label class="form-label">CPF</label>
+                        <label class="text-primary" class="form-label">123.554.654-88</label>
+                      </div>
+                      <div class="col-md-5">
+                        <label class="form-check-label" class="text-primary" for="invalidCheck">Suspenso: <span class="text-primary">Não</span></label>
+                      </div>  
+                  </form>             
               </div>
               <div class="modal-footer">
-                  <button class="btn btn-primary" type="button">Ok</button>                                
+                  <button class="btn btn-primary" type="submit">Okay</button>                               
               </div>                
           </div>
       </div>
   </div>
-  <!--Fim modal de informações do usuário -->
+  <!--Fim modal de informações de administradores -->
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
