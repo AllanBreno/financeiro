@@ -297,46 +297,29 @@
               </div>
               <!-- Corpo do modal -->
               <div class="modal-body">                    
-                  <form class="row g-3 needs-validation" novalidate>                            
-                   <div class="col-md-3">
-                       <label for="validationCustom01" class="form-label">Valor</label>
-                       <input type="text" class="form-control" id="validationCustom01" value="0,00" required>                        
-                     </div>
-                     <div class="col-md-2">
-                       <label for="validationCustom02" class="form-label">Operação</label>
-                       <div class="form-check"> 
-                           <div>
-                               <input class="form-check-input mr-3" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                               <label class="form-check-label" for="flexRadioDefault1">
-                               Débito
-                               </label>
-                           </div>                         
-                           <div>
-                               <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                               <label class="form-check-label" for="flexRadioDefault2">
-                               Crédito
-                               </label>
-                           </div>                            
-                       </div>          
-                     </div>
-                     <div class="col-md-3">
-                       <label for="validationCustom04" class="form-label">Conta</label>
+                  <form class="row g-3 needs-validation" novalidate> 
+                     <div class="col-md-4">
+                       <label for="validationCustom04" class="form-label">Banco</label>
                        <select class="form-select" id="validationCustom04" required>
                          <option selected disabled value="">Selecione</option>
-                         <option>Conta 1</option>
-                         <option>Conta 2</option>
-                         <option>Conta 3</option>
+                         <option value="1">Bradesco</option> 
+                         <option value="2">Itaú</option>
+                         <option value="3">Santander</option>
+                         <option value="4">Caixa Econômica</option>
+                         <option value="5">Banco do Brasil</option>
+                         <option value="6">Barinsul</option>
+                         <option value="7">Outro</option>
                        </select>                        
                      </div>  
-                     <div class="col-md-1">
-                       <label for="validationCustom04" class="form-label">Categoria</label>
-                       <select class="form-select" id="validationCustom04" required>
-                         <option selected disabled value="">Selecione</option>
-                         <option>Alimentação</option>
-                         <option>Transporte</option>
-                         <option>Casa</option>
-                       </select>                        
-                   </div>  
+                    <div class="col-md-3">
+                       <label for="validationCustom01" class="form-label">Agência</label>
+                       <input type="text" class="form-control" id="validationCustom01" required>                        
+                    </div> 
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Conta Corrente</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>                        
+                     </div> 
+                     
                      <div class="col-md-12">
                        <label for="validationCustom03" class="form-label">Descrição</label>
                        <input type="text" class="form-control" id="validationCustom03" required>                      
