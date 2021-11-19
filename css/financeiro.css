@@ -11244,6 +11244,7 @@ form.user .btn-user {
   }
 }
 
+
 .error:before {
   content: attr(data-text);
   position: absolute;
@@ -11270,3 +11271,17 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+tr {
+  cursor: pointer;
+}
+
+.table tbody tr.highlight td {
+  background-color: #ddd;
+}
+
+footer {	
+	bottom: 0;
+}
+
+

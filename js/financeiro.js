@@ -54,6 +54,10 @@
 
 })(jQuery);
 
+$('#dataTable').on('click', 'tbody tr', function(event) {
+  $(this).addClass('highlight').siblings().removeClass('highlight');
+});
+
 // Função que só permite números no CPF
 function permiteSoNumeros(evt) {  
   var entrada = (evt.which) ? evt.which : evt.keyCode
