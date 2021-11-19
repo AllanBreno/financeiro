@@ -182,195 +182,417 @@
                             <div class="table-responsive">
                                 <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
-                                        <tr>                                                                                       
+                                        <tr>     
+                                            <th>Id</th>                                                                                  
                                             <th>Conta</th>
                                             <th>Categoria</th>
                                             <th>Valor R$</th>
                                             <th>Operação</th>
                                             <th>Data</th>
-                                            <th>Descrição</th>
+                                            <th>Descrição</th>    
+                                            <th></th>                                                                           
                                         </tr>
                                     </thead>
                                     <tfoot>
-                                        <tr>                                            
+                                        <tr>       
+                                            <th>Id</th>                                        
                                             <th>Conta</th>
                                             <th>Categoria</th>
                                             <th>Valor R$</th>
                                             <th>Operação</th>
-                                            <th>Data</th>
-                                            <th>Descrição</th>
+                                            <th>Data</th>    
+                                            <th>Descrição</th>  
+                                            <th></th>                                                                          
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
+                                            <td>1</td>
                                             <td>Conta 2</td>
                                             <td>Alimentação</td>
                                             <td>320,800</td>    
                                             <td>Débito</td>
                                             <td>01/03/2021</td>
-                                            <td>Mercado</td>                                        
+                                            <td>Mercado</td>      
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>                              
                                         </tr>
                                         <tr>
+                                            <td>2</td>
                                             <td>Conta 2</td>
                                             <td>Transporte</td>
                                             <td>170,750</td>
                                             <td>Crédito</td>
                                             <td>01/05/2021</td>
-                                            <td></td>
+                                            <td>Mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>          
                                         </tr>
                                         <tr>
+                                            <td>3</td>
                                             <td>Conta 2</td>
                                             <td>Alimentação</td>
                                             <td>86,000</td>
                                             <td>Débito</td>
                                             <td>01/09/2021</td>
                                             <td>Mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>           
                                         </tr>
                                         <tr>
+                                            <td>4</td>
                                             <td>Conta 1</td>
                                             <td>Transporte</td>
                                             <td>433,060</td>
                                             <td>Crédito</td>
                                             <td>30/01/2021</td>
                                             <td>Metro + Trem</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>           
                                         </tr>
                                         <tr>
+                                            <td>5</td>
                                             <td>Conta 3</td>
                                             <td>Transporte</td>
                                             <td>162,700</td>
                                             <td>Débito</td>
                                             <td>15/03/2021</td>
                                             <td>Barca</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>          
                                         </tr>
                                         <tr>
+                                            <td>6</td>
                                             <td>Conta 2</td>
                                             <td>Transporte</td>
                                             <td>372,000</td>
                                             <td>Crédito</td>
                                             <td>15/03/2021</td>
-                                            <td></td>
+                                            <td>Lazer</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>          
                                         </tr>
                                         <tr>
+                                            <td>7</td>
                                             <td>Conta 5</td>
                                             <td>Alimentação</td>
                                             <td>137,500</td>
                                             <td>Débito</td>
                                             <td>15/03/2021</td>
                                             <td>Mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>      
                                         </tr>
                                         <tr>
+                                            <td>8</td>
                                             <td>Conta 4</td>
                                             <td>Transporte</td>
                                             <td>12,90</td>
                                             <td>Crédito</td>
                                             <td>11/01/2021</td>
                                             <td>Metroô</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>         
                                         </tr>
                                         <tr>
+                                            <td>9</td>
                                             <td>Conta 2</td>
                                             <td>Alimentação</td>
                                             <td>205,500</td>
                                             <td>Débito</td>
                                             <td>20/03/2021</td>
                                             <td>Mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>         
                                         </tr>
                                         <tr>
+                                            <td>10</td>
                                             <td>Conta 3</td>
                                             <td>Combustível</td>
                                             <td>103,600</td>
                                             <td>Crédito</td>
                                             <td>15/06/2021</td>
-                                            <td></td>
+                                            <td>Praia</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>          
                                         </tr>
                                         <tr>
+                                            <td>11</td>
                                             <td>Conta 4</td>
                                             <td>Combustível</td>
                                             <td>90,560</td>
                                             <td>Débito</td>
                                             <td>10/07/2021</td>
                                             <td>Ida ao mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>    
                                         </tr>
                                         <tr>
+                                            <td>12</td>
                                             <td>Conta 2</td>
                                             <td>Combustível</td>
                                             <td>342,000</td>
                                             <td>Crédito</td>
                                             <td>15/03/2021</td>
                                             <td>Ida à praia</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>             
                                         </tr>
                                         <tr>
+                                            <td>13</td>
                                             <td>Conta 1</td>
                                             <td>Lazer</td>
                                             <td>470,600</td>
                                             <td>Débito</td>
                                             <td>15/03/2021</td>
                                             <td>Praia</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>              
                                         </tr>
                                         <tr>
+                                            <td>14</td>
                                             <td>Conta 1</td>
                                             <td>Alimentação</td>
                                             <td>313,500</td>
                                             <td>Crédito</td>
                                             <td>15/03/2021</td>
                                             <td>Mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>        
                                         </tr>
                                         <tr>
+                                            <td>15</td>
                                             <td>Conta 1</td>
                                             <td>Lazer</td>
                                             <td>385,750</td>
                                             <td>Crédito</td>
                                             <td>20/04/2020</td>
                                             <td>Passeio na praça</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>               
                                         </tr>
                                         <tr>
+                                            <td>16</td>
                                             <td>Conta 5</td>
                                             <td>Alimentação</td>
                                             <td>198,500</td>
                                             <td>Débito</td>
                                             <td>20/01/2021</td>
                                             <td>Mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>             
                                         </tr>
                                         <tr>
+                                            <td>17</td>
                                             <td>Conta 5</td>
                                             <td>Lazer</td>
                                             <td>725,000</td>
                                             <td>Crédito</td>
                                             <td>14/02/2020</td>
                                             <td>Lanche</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>           
                                         </tr>
                                         <tr>
+                                            <td>18</td>
                                             <td>Conta 4</td>
                                             <td>Alimentação</td>
                                             <td>237,500</td>
                                             <td>Débito</td>
                                             <td>01/05/2021</td>
                                             <td>Mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>           
                                         </tr>
                                         <tr>
+                                            <td>19</td>
                                             <td>Conta 2</td>
                                             <td>Família</td>
                                             <td>132,000</td>
                                             <td>Crédito</td>
                                             <td>15/10/2021</td>
-                                            <td>$132,000</td>
+                                            <td>132,000</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>        
                                         </tr>
                                         <tr>
+                                            <td>20</td>
                                             <td>Conta 4</td>
                                             <td>Alimentação</td>
                                             <td>217,500</td>
                                             <td>Débito</td>
                                             <td>19/11/2021</td>
                                             <td>Mercado</td>
+                                            <td> 
+                                                <div class="text-center">
+                                                    <a href="#" onclick="alternarOperacaoNovoOuEdicao('lancamentoModalLabel', 'edit', 'Lançamento')" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-edit pr-1"></i>                       
+                                                    </a>
+                                                    <a href="#" data-toggle="modal" data-target="#lancamentoModal">
+                                                        <i class="fas fa-1x fa-trash-alt"></i>                    
+                                                    </a>
+                                                </div>                                                           
+                                            </td>      
                                         </tr>                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!-- /.container-fluid -->
-
+                <!-- Container-fluid -->
             </div>
             <!-- End of Main Content -->
 
@@ -527,7 +749,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/financeiro.js"></script>
+    <script src="js/financeiro.js"></script>    
 
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.js"></script>
@@ -535,6 +757,9 @@
 
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/lancamentos.js"></script>
 
 </body>
 </html>

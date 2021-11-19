@@ -58,6 +58,14 @@ $('#dataTable').on('click', 'tbody tr', function(event) {
   $(this).addClass('highlight').siblings().removeClass('highlight');
 });
 
+// Alterna o modal de inclusão quando ocorre edição do registro
+function alternarOperacaoNovoOuEdicao(event, op, descricao) {  
+  var elemento = document.getElementById(event);
+  if (op === 'edit') {    
+    elemento.innerHTML = "Editar " + descricao;
+  }
+}
+
 // Função que só permite números no CPF
 function permiteSoNumeros(evt) {  
   var entrada = (evt.which) ? evt.which : evt.keyCode
